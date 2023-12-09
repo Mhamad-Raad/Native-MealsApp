@@ -10,7 +10,7 @@ const CategoryGridTile = ({ title, color }) => {
           pressed ? styles.buttonPressed : null,
         ]}
       >
-        <View style={styles.innerContainer}>
+        <View style={[styles.innerContainer, { backgroundColor: color }]}>
           <Text style={styles.title}>{title}</Text>
         </View>
       </Pressable>
@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
   innerContainer: {
     flex: 1,
     padding: 16,
+    borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
   },
