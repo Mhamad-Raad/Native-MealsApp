@@ -4,7 +4,7 @@ import CategoryGridTile from '../components/CategoryGridTile';
 
 import { CATEGORIES } from '../data/dummy-data';
 
-const renderCategoryItem = ({ itemData }) => {
+const renderCategoryItem = ( itemData ) => {
   return (
     <CategoryGridTile title={itemData.item.title} color={itemData.item.color} />
   );
